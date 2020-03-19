@@ -38,8 +38,11 @@ This repository contains [xkb] configuration to remap local keys.
   mapping changes the left windows key to the right control key, which I never
   use.
 
-  This can then be reinterpreted by the trivial AutoHotKey script `RCtrl::LWin`
-  on the final host.
+  This can then be reinterpreted by AutoHotKey scripts like this:
+
+  ```
+  RCtrl & Tab:: Send {LWin down} {Tab} {LWin up}
+  ```
 
 ## Usage
 
