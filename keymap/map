@@ -1,0 +1,7 @@
+xkb_keymap {
+    xkb_keycodes  { include "evdev+aliases(qwerty)+remote(rdc)" };
+    xkb_types     { include "complete+remote(rdc)"  };
+    xkb_compat    { include "complete"  };
+    xkb_symbols   { include "pc+gb+inet(evdev)+capslock(swapescape)+super(swap_menu_super_l)+remote(rdc)"   };
+    xkb_geometry  { include "pc(pc105)" };
+};

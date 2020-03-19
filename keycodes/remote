@@ -1,0 +1,5 @@
+xkb_keycodes "rdc" {
+  // Remap LWIN to RCTL and vice-versa
+  <LWIN> = 105; // Was 133
+  <RCTL> = 133; // Was 105
+};

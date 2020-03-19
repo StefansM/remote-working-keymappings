@@ -1,0 +1,6 @@
+xkb_symbols "rdc" {
+    key  <TAB> {
+        type= "THREE_LEVEL_ALT",
+        symbols[Group1] = [ Tab, Prior, Next ]
+    };
+};
