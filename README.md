@@ -21,17 +21,17 @@ This repository contains [xkb] configuration to remap local keys.
 
 ## Mappings
 
-* <kbd>Alt</kbd> + <kbd>Tab</kbd>: <kbd>Alt</kbd> + <kbd>PgUp</kbd>
+* <kbd>Alt</kbd> + <kbd>Tab</kbd> → <kbd>Alt</kbd> + <kbd>PgUp</kbd>
 
   Default Windows window-switcher.
 
-* <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>Tab</kbd>: <kbd>Alt</kbd> + <kbd>PgDown</kbd>
+* <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>Tab</kbd> → <kbd>Alt</kbd> + <kbd>PgDown</kbd>
 
   Default Windows window-switcher (reverse). Note: this actually sends
   <kbd>Alt</kbd> + <kbd>PgDown</kbd> because I don't understand xkb, but it seems
   to work.
 
-* <kbd>LWin</kbd>: <kbd>RCtl</kbd>
+* <kbd>LWin</kbd> → <kbd>RCtl</kbd>
 
   I use the left windows key for a lot of shortcuts, but this gets eaten by the
   jump box instead of being passed to the last workstation in the chain. This
@@ -45,11 +45,11 @@ This repository contains [xkb] configuration to remap local keys.
 
 Apply the map using `xkbcomp`. Assuming this repository is cloned to `~/.xkb`:
 
-  xkbcomp -I$HOME/.xkb ~/.xkb/keymap/remote $DISPLAY
+    xkbcomp -I$HOME/.xkb ~/.xkb/keymap/remote $DISPLAY
 
 Switch back using the `default` keymap:
 
-  xkbcomp -I$HOME/.xkb ~/.xkb/keymap/default $DISPLAY
+    xkbcomp -I$HOME/.xkb ~/.xkb/keymap/default $DISPLAY
 
 If you don't use a British keyboard, you'll need to change the mapping files to
 use your layout.
